@@ -1,5 +1,5 @@
-name: hiddify
-description: Cross Platform Multi Protocol Proxy Frontend.
+name: ivpn
+description: iVPN — Secure VPN app.
 publish_to: "none"
 version: 2.5.7+20507
 
@@ -14,16 +14,10 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.6
   intl: ^0.19.0
-  # humanizer: ^2.2.0
-  # intl: ^0.19.0
   humanizer:
     git:
       url: https://github.com/alex-relov/humanizer
       ref: up-version
-  # lucy_editor: ^1.0.5
-  # re_highlight: ^0.0.3
-  # json_editor_flutter: ^1.4.2
-
   slang: ^3.30.1
   slang_flutter: ^3.30.0
   fpdart: ^1.1.0
@@ -86,14 +80,11 @@ dependencies:
   http: ^1.2.0
   timezone_to_country: ^2.1.0
   json_path: ^0.7.1
-  # permission_handler: ^11.3.0 # is not compatible with windows
-  #flutter_easy_permission: ^1.1.2
   flutter_easy_permission: 
      git: https://github.com/unger1984/flutter_easy_permission.git
   in_app_review: ^2.0.9
-  # circle_flags: ^4.0.2
   circle_flags:
-    git: https://github.com/hiddify-com/flutter_circle_flags.git
+    git: https://github.com/ivpn-com/flutter_circle_flags.git
   protobuf: ^3.1.0
   grpc: ^3.2.4
   dynamic_color: ^1.7.0
@@ -115,14 +106,11 @@ dev_dependencies:
   dart_mappable_builder: ^4.2.1
 
 dependency_overrides:
-  # drift & package_info_plus are not compatible
   web: ^1.0.0
 
 flutter:
   uses-material-design: true
   assets:
-    # - assets/core/geoip.db
-    # - assets/core/geosite.db
     - assets/images/logo.svg
     - assets/images/tray_icon.ico
     - assets/images/tray_icon.png
@@ -139,9 +127,6 @@ flutter:
     - family: Shabnam
       fonts:
         - asset: assets/fonts/Shabnam.ttf
-    # - family: Roboto
-    #   fonts:
-    #     - asset: assets/fonts/Roboto.ttf
     - family: Emoji
       fonts:
         - asset: assets/fonts/Emoji.ttf
